@@ -60,7 +60,7 @@
                     <% else %>
                       <td align="center"><%=@numbering_partners[item.numbering_partner_id].disp_name %></td>
                     <% end %>
-                    <td align="center"><%=item.document %></td>
+                    <td align="left"><%=item.document %></td>
                     <td align="center"><%=item.publisher %></td>
                     <td align="center"><%=format_time(item.created_on, true) %></td>
                     <td align="center"><%=link_to l(:label_numbering_details), project_numbering_item_path(@project, item), :class => 'icon icon-report'%></td>
